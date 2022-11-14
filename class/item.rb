@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Item_class_implementation
 
 class Item
