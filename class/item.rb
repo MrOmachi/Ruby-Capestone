@@ -9,4 +9,15 @@ class Item
   @archive = false
  end
 
+ def move_to_archive
+  @archive = true if can_be_archived?
+ end
+
+ private
+
+ def can_be_archived?
+  current = Time.now.year - publish_date.year.to_i
+  true if current > 10
+ end
+
 end
