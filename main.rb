@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def display_options
   options = [
     '1. List all books',
