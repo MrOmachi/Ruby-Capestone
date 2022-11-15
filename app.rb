@@ -1,5 +1,3 @@
-require_relative './main'
-
 class App
   def initialize
     @books = []
@@ -12,7 +10,7 @@ class App
   end
 
   def run
-    promt
+    display_options
   end
 
   def list_all_books
