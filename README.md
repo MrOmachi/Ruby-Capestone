@@ -10,7 +10,7 @@ In this project, start building the school library app. In this initial step, I 
     Getting Started
     Follow setup instructions below
     Prerequisites
-    Ruby
+    Ruby.
     Git and Github Terminal browser.
 
 ## Setup
