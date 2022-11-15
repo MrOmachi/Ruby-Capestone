@@ -9,9 +9,8 @@ def display_options
     "7. List all sources (e.g. 'From a friend', 'Online shop')",
     '8. Add a book',
     '9. Add a music album',
-    '10. Add a movie',
-    '11. Add a game',
-    '12. Exit'
+    '10. Add a game',
+    '11. Exit'
   ]
   puts options
 
