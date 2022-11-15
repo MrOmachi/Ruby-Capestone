@@ -1,5 +1,4 @@
-# Item_class_implementation
-
+# Item class
 class Item
   attr_reader :publish_date, :id, :archived
 
