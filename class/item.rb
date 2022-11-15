@@ -1,17 +1,36 @@
 # Item_class_implementation
 
 class Item
-  attr_accessor :id, :publish_date
-  attr_reader :archive
+  attr_reader :publish_date, :id, :archived
 
-  def initialize(_id, publish_date, _archive)
+  def initialize(_id, publish_date, _archived)
     @id = random.rand(1..1000)
-    @publish_date = publish_date
-    @archive = false
+    @publish_date = Date.strptime(publish_date, '%Y-%m-%d')
+    @archived = false
+  end
+
+  def author=(author)
+    @author = author
+    author.items.push(self) unless author.items.includes?(self)
+  end
+
+  def source=(source)
+    @source = source
+    source.items.push(self) unless source.items.includes?(self)
+  end
+
+  def label=(label)
+    @label = label
+    label.items.push(self) unless label.items.includes?(self)
+  end
+
+  def genre=(genre)
+    @genre = genre
+    genre.items.push(self) unless genre.items.includes?(self)
   end
 
   def move_to_archive
-    @archive = true if can_be_archived?
+    @archived = true if can_be_archived?
   end
 
   private
