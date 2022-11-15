@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Item class
 class Item
   attr_reader :publish_date, :id, :archived
