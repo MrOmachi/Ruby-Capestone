@@ -1,19 +1,44 @@
-def display_options
-  options = { 1 => 'List all books', 2 => 'List all music albums', 3 => 'List of games',
-              4 => 'List all genres', 5 => 'List all labels', 6 => 'List all authors',
-              7 => 'List all sources', 8 => 'Add a book', 9 => 'Add a music album',
-              10 => 'Add a game', 11 => 'Exit' }
-  options.each { |key, value| puts "#{key} - #{value}\n" }
-  user_select
-end
+require './app'
 
 def user_select
   choice = gets.chomp.to_i
-  puts choice
+  choose_option(choice)
+end
+
+def choose_option(choice)
+  case choice
+  when 1
+    list_all_books
+  when 2
+    list_all_music_albums
+  when 3
+    list_of_games
+  when 4
+    list_all_genres
+  when 5
+    list_all_labels
+  when 6
+    list_all_authors
+  when 7
+    list_all_sources
+  when 8
+    add_a_book
+  when 9
+    add_a_music_album
+  when 10
+    add_a_game
+  else
+    exit
+  end
+end
+
+def promt
+  choose_option
 end
 
 def main
-  display_options
+  app = App.new
+  app.run
 end
 
 main
