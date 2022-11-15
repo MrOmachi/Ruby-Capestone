@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Label class
 class Label
   attr_reader :id, :title, :color, :items
