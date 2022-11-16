@@ -1,4 +1,12 @@
+require './module/game_module'
+require_relative './module/author_module'
+
 class App
+
+include GameModule
+include DataStorage
+
+
   def initialize
     @books = []
     @labels = []
@@ -22,7 +30,7 @@ class App
   end
 
   def list_of_games
-    puts 'list_of_games'
+    list_game
   end
 
   def list_all_genres
@@ -34,7 +42,7 @@ class App
   end
 
   def list_all_authors
-    puts 'list_all_authors'
+    list_authors
   end
 
   def list_all_sources
@@ -50,6 +58,6 @@ class App
   end
 
   def add_a_game
-    puts 'Add a game'
+    add_game
   end
 end
