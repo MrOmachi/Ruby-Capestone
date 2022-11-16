@@ -8,6 +8,10 @@
 
 - Ruby
 
+## Demo video
+
+- [See the video here](https://drive.google.com/file/d/1gXsAMYMe8TpIl5j45CWir7eCDARuyO8u/view?usp=sharing)
+
 ## Pre-requisites
 
 - You need to have Ruby installed on your local machine
