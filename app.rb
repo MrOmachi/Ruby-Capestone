@@ -1,4 +1,8 @@
+require_relative './module/add_books'
+
 class App
+  include BookModule
+
   def initialize
     @books = []
     @labels = []
@@ -14,7 +18,7 @@ class App
   end
 
   def list_all_books
-    puts 'List all books'
+    list_books
   end
 
   def list_all_music_albums
@@ -30,7 +34,7 @@ class App
   end
 
   def list_all_labels
-    puts 'list_all_labels'
+    list_label
   end
 
   def list_all_authors
@@ -42,7 +46,7 @@ class App
   end
 
   def add_a_book
-    puts 'add_a_book'
+    add_books
   end
 
   def add_a_music_album

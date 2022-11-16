@@ -2,9 +2,9 @@
 class Item
   attr_reader :publish_date, :id, :archived
 
-  def initialize(_id, publish_date, _archived)
-    @id = random.rand(1..1000)
-    @publish_date = Date.strptime(publish_date, '%Y-%m-%d')
+  def initialize(publish_date: Time.now)
+    @id = Random.rand(1..1000)
+    @publish_date = publish_date
     @archived = false
   end
 
