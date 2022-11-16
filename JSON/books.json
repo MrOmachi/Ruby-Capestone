@@ -1,14 +1,16 @@
 [
   {
-    "publish_date": "2011-02-12",
-    "publisher": "Google",
+    "publish_date": "2012-02-12",
+    "publisher": "Elsiever",
     "cover_state": "Good",
-    "archived": false
+    "archived": false,
+    "id": 57
   },
   {
-    "publish_date": "2021-12-20",
-    "publisher": "Goo",
-    "cover_state": "Good",
-    "archived": false
+    "publish_date": "2013-02-12",
+    "publisher": "Google",
+    "cover_state": "Exellent",
+    "archived": false,
+    "id": 26
   }
 ]

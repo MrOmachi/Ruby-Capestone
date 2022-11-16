@@ -12,13 +12,13 @@ include DataStorage
     publisher = ask_publisher
     book = Book.new(publisher, cover_state, publish_date)
     @books.push(book)
-    book_data = {publish_date: book.publish_date, publisher: book.publisher, cover_state: book.cover_state, archived: book.archived }
+    book_data = { publish_date: book.publish_date, publisher: book.publisher, cover_state: book.cover_state, archived: book.archived, id: Random.rand(1..100)}
     update_storage('books', book_data)
     label = load_storage('labels')
     title = ask_title
     color = ask_color
     label = Label.new(title, color)
-    label_data = {title: label.title, color: label.color }
+    label_data = {title: label.title, color: label.color, id: Random.rand(1..100) }
     @labels.push(label)
     update_storage('labels', label_data)
     puts 'BOOK AND LABEL CREATED SUCCESSFULLY'
@@ -28,8 +28,8 @@ include DataStorage
   def list_books
     books = load_storage('books')
     puts 'No Books: ' if books.length.zero?
-    books.each do |book|
-      puts "Publish_date: #{book['publish_date']}, cover_state: #{book['cover_state']}", "Publisher: #{book['publisher']}, Archived: #{book['archived']}"
+    books.each_with_index do |book, index|
+      puts  "#{index + 1}. Publish_date: #{book['publish_date']}, cover_state: #{book['cover_state']}", "Publisher: #{book['publisher']}, Archived: #{book['archived']}, ID: #{book['id']}"
     end
     puts "\n"
   end
@@ -37,8 +37,8 @@ include DataStorage
   def list_label
     labels = load_storage('labels')
     puts 'No label: ' if labels.length.zero?
-    labels.each do |label| 
-        puts "Title: #{label['title']}, Color: #{label['color']}" 
+    labels.each do |label, index| 
+        puts "#{index + 1}. Title: #{label['title']}, Color: #{label['color']}, ID: #{label['id']}" 
     end    
     puts "\n"
   end
