@@ -27,7 +27,7 @@ module GameModule
     game_data = { last_played_date: last_played_date, multiplayer: multiplayer.downcase == 'y',
                   authors: author_arr }
     update_storage('games', game_data)
-    puts "\n Game with last play date: #{last_played_date} and multiplayer:/
+    puts "\n Game with last play date: #{last_played_date} and multiplayer:\
  #{multiplayer.downcase == 'y' ? 'enabled' : 'disabled'} added successfully"
   end
 
@@ -35,7 +35,7 @@ module GameModule
     game = load_storage('games')
     puts 'No game have been added yet' if game.empty?
     game.each_with_index do |x, i|
-      puts "\n #{i + i}. Game with Last Play Date:/
+      puts "\n #{i + i}. Game with Last Play Date:\
  #{x['last_played_date']} and multiplayer: #{x['multiplayer'] == 'enabled' ? 'true' : 'False'} \n \n"
     end
   end

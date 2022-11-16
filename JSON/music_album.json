@@ -180,5 +180,17 @@
         "name": "Tapatio"
       }
     ]
+  },
+  {
+    "id": 704,
+    "archived": true,
+    "publish_date": "1111-11-11",
+    "on_spotify": "N",
+    "genre": [
+      {
+        "id": 44,
+        "name": "Pop"
+      }
+    ]
   }
 ]
