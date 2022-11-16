@@ -2,10 +2,8 @@ require './module/game_module'
 require_relative './module/author_module'
 
 class App
-
-include GameModule
-include DataStorage
-
+  include GameModule
+  include DataStorage
 
   def initialize
     @books = []
