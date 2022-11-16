@@ -1,4 +1,4 @@
-require './app'
+require_relative './app'
 
 def display_options
   options = { 1 => 'List all books', 2 => 'List all music albums', 3 => 'List of games',

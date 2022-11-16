@@ -26,3 +26,14 @@ module DataStorage
     end
   end
 end
+
+  def load_storage(file)
+    path = "./JSON/#{file}.json"
+    if File.exist?(path)
+      File.write(path, '[]') if File.empty?(path)
+      JSON.parse(File.read(path))
+    else
+      []
+    end
+  end
+end
