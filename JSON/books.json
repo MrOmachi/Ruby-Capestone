@@ -33,5 +33,19 @@
     "cover_state": "perfect",
     "archived": false,
     "id": 19
+  },
+  {
+    "publish_date": "2012-02-12",
+    "publisher": "yotube",
+    "cover_state": "Good",
+    "archived": false,
+    "id": 2
+  },
+  {
+    "publish_date": "2012-02-12",
+    "publisher": "Google",
+    "cover_state": "perfect",
+    "archived": false,
+    "id": 24
   }
 ]

@@ -22,5 +22,15 @@
     "title": "your angel",
     "color": "white",
     "id": 42
+  },
+  {
+    "title": "Javascript",
+    "color": "black",
+    "id": 43
+  },
+  {
+    "title": "Ruby",
+    "color": "red",
+    "id": 34
   }
 ]

@@ -192,5 +192,29 @@
         "name": "Pop"
       }
     ]
+  },
+  {
+    "id": 301,
+    "archived": null,
+    "publish_date": "2013-02-12",
+    "on_spotify": "N",
+    "genre": [
+      {
+        "id": 25,
+        "name": "Ballet"
+      }
+    ]
+  },
+  {
+    "id": 987,
+    "archived": null,
+    "publish_date": "2013-02-12",
+    "on_spotify": "Y",
+    "genre": [
+      {
+        "id": 25,
+        "name": "Ballet"
+      }
+    ]
   }
 ]
