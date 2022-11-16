@@ -1,6 +1,8 @@
 require_relative './item'
 
 class Author < Item
+  attr_accessor :items, :first_name
+
   def initialize(first_name, last_name)
     super()
     @id = Random.rand(1..1000)
@@ -10,7 +12,7 @@ class Author < Item
   end
 
   def add_item(game)
-    @item.push(game)
+    @items << game
     game.author = self
   end
 end

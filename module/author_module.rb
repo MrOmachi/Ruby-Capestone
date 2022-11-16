@@ -20,7 +20,8 @@ module GamesAuthor
     authors = load_storage('authors')
     puts 'There are no authors yet' if authors.empty?
     authors.each_with_index do |author, index|
-      puts "#{index + 1}. First name: #{author['first_name']}, Last Name: #{author['last_name']} with user ID: #{author['id']}"
+      puts "#{index + 1}. First name: #{author['first_name']}, Last Name: #{author['last_name']}\
+ with user ID: #{author['id']}"
     end
   end
 end

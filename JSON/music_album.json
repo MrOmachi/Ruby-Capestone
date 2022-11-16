@@ -168,5 +168,29 @@
         "name": "Reguetton"
       }
     ]
+  },
+  {
+    "id": 384,
+    "archived": true,
+    "publish_date": "2000-12-12",
+    "on_spotify": "Y",
+    "genre": [
+      {
+        "id": 38,
+        "name": "Tapatio"
+      }
+    ]
+  },
+  {
+    "id": 704,
+    "archived": true,
+    "publish_date": "1111-11-11",
+    "on_spotify": "N",
+    "genre": [
+      {
+        "id": 44,
+        "name": "Pop"
+      }
+    ]
   }
 ]

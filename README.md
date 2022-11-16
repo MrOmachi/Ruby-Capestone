@@ -1,58 +1,67 @@
-# school-library
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-In this project, start building the school library app. In this initial step, I implemented the classes to represent students and teachers.
+# Ruby Capstone
 
-## Live Version
+> This is an Educational project for the Microverse Module 4 Block 5(Ruby Capstone Project) Ruby Capstone exercise, requirement for the Ruby Module
 
 ## Built With
 
-    Ruby
-    Getting Started
-    Follow setup instructions below
-    Prerequisites
-    Ruby.
-    Git and Github Terminal browser.
+- Ruby
+
+## Pre-requisites
+
+- You need to have Ruby installed on your local machine
+- Ruby bundler properly set up for installing dependencies
+
+  > *Go here to get Ruby installer for windows* > [Windows Installer](https://rubyinstaller.org/)
+
+  > *Go here to get Ruby installer for Linux* > [Linux Installer](https://www.ruby-lang.org/en/documentation/installation/)
+
+  > *Go here to get Ruby installer for MacOS* > [MacOS Installer](https://www.ruby-lang.org/en/documentation/installation/)
 
 ## Setup
 
-clone the following repo https://github.com/Tadessejemal1/school-library
-cd into the directory and run bundle install to install dependencies.
-
-## Credits
+- Git clone `https://github.com/MrOmachi/Ruby-Capestone.git`
+- cd `ruby-capstone-project`
+- run `bundle install`
+- run `rubocop .` to check for linters
+- run `./main.rb` to run program
 
 ## Authors
 
-## 👤 Tadesse Jemal.
+👤 *Omachi John*
 
-- GitHub: @Tadessejemal1
-- Twitter: @Coding
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@MrOmachi](https://github.com/MrOmachi)
+- Twitter: [@Mr_Omachi](https://twitter.com/Mr_Omachi)
+- LinkedIn: [John Omachi](https://www.linkedin.com/in/johnomachi/)
 
-## 👤 Tadesse Jemal.
+👤 *Erik Stoupignan Sánchez Beltrán*
 
-- GitHub: @Tadessejemal1
-- Twitter: @Coding
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@ErikStoupignan](https://github.com/ErikStoupignan)
+- Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
+- LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-sanchez-beltran/)
 
-## 👤 Tadesse Jemal.
+👤 *Tadesse Jemal*
 
-- GitHub: @Tadessejemal1
-- Twitter: @Coding
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@Tadessejemal1](https://github.com/Tadessejemal1)
+- Twitter: [@twitterhandle](https://twitter.com/tadesse)
+- LinkedIn: [@tadesse-jemal](https://linkedin.com/in/tadesse-jemal)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐ if you like this project!
 
 ## Acknowledgments
 
-## Microverse
+- Hat tip to anyone whose code was used
+- Microverse community
 
-📝 License
-This project is MIT licensed.
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
