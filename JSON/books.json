@@ -19,5 +19,12 @@
     "cover_state": "good",
     "archived": false,
     "id": 79
+  },
+  {
+    "publish_date": "2000-12-12",
+    "publisher": "Google",
+    "cover_state": "Good",
+    "archived": false,
+    "id": 2
   }
 ]
