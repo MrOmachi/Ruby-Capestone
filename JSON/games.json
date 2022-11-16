@@ -79,5 +79,16 @@
         "id": 2
       }
     ]
+  },
+  {
+    "last_played_date": "12-12-1111",
+    "multiplayer": true,
+    "authors": [
+      {
+        "first_name": "Omachi",
+        "last_name": "Erik",
+        "id": 3
+      }
+    ]
   }
 ]

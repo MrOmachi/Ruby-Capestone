@@ -8,5 +8,10 @@
     "first_name": "John 2",
     "last_name": "Omachi 2",
     "id": 2
+  },
+  {
+    "first_name": "Omachi",
+    "last_name": "Erik",
+    "id": 3
   }
 ]

@@ -1,17 +1,23 @@
 require './module/game_module'
 require_relative './module/author_module'
+require_relative './module/music_module'
 
 class App
   include GameModule
   include DataStorage
+  include MusicModule
+  include ReadMusic
+  include WriteMusic
+  include ReadGenre
+  include WriteGenre
 
   def initialize
     @books = []
     @labels = []
     @source = []
-    @music_album = []
+    @music_album = read_list
     @games = []
-    @genre = []
+    @genre = read_genre
     @authors = []
   end
 
@@ -24,7 +30,7 @@ class App
   end
 
   def list_all_music_albums
-    puts 'list_all_music_albums'
+    music_list
   end
 
   def list_of_games
@@ -32,7 +38,7 @@ class App
   end
 
   def list_all_genres
-    puts 'list_all_genres'
+    show_genres
   end
 
   def list_all_labels
@@ -52,7 +58,7 @@ class App
   end
 
   def add_a_music_album
-    puts 'add_a_music_album'
+    add_a_music
   end
 
   def add_a_game
