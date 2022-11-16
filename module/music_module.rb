@@ -1,5 +1,4 @@
 require 'json'
-require 'colorize'
 require_relative '../class/music_album'
 require_relative '../class/genre'
 

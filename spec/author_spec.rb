@@ -1,5 +1,8 @@
-descrbe 'Testing author class implementation' do
-  befor(:each) do
+require './class/author'
+require './class/item'
+
+describe 'Testing author class implementation' do
+  before(:each) do
     @author = Author.new('John', 'Omachi')
     @item = Item.new
     @author.add_item(@item)
