@@ -3,11 +3,11 @@ require_relative './app'
 def display_options
   options = { 1 => 'List all books', 2 => 'List all music albums', 3 => 'List of games',
               4 => 'List all genres', 5 => 'List all labels', 6 => 'List all authors',
-              7 => 'List all sources', 8 => 'Add a book', 9 => 'Add a music album',
-              10 => 'Add a game', 11 => 'Exit' }
+              7 => 'Add a book', 8 => 'Add a music album',
+              9 => 'Add a game', 10 => 'Exit' }
   options.each { |key, value| puts "#{key} - #{value}\n" }
   choice = gets.chomp.to_i
-  if choice >= 1 && choice <= 11
+  if choice >= 1 && choice <= 10
     choose_option(choice)
   else
     puts 'Select a valid option'
@@ -29,11 +29,10 @@ def choose_option_one(choice)
 end
 
 def choose_option_two(choice)
-  list_all_sources if choice == 7
-  add_a_book if choice == 8
-  add_a_music_album if choice == 9
-  add_a_game if choice == 10
-  exit if choice == 11
+  add_a_book if choice == 7
+  add_a_music_album if choice == 8
+  add_a_game if choice == 9
+  exit if choice == 10
 end
 
 def main

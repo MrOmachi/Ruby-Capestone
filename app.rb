@@ -1,3 +1,5 @@
+
+require_relative './module/add_books'
 require './module/game_module'
 require_relative './module/author_module'
 require_relative './module/music_module'
@@ -5,6 +7,7 @@ require_relative './module/music_module'
 class App
   include GameModule
   include DataStorage
+  include BookModule
   include MusicModule
   include ReadMusic
   include WriteMusic
@@ -26,7 +29,7 @@ class App
   end
 
   def list_all_books
-    puts 'List all books'
+    list_books
   end
 
   def list_all_music_albums
@@ -42,7 +45,7 @@ class App
   end
 
   def list_all_labels
-    puts 'list_all_labels'
+    list_label
   end
 
   def list_all_authors
@@ -54,7 +57,7 @@ class App
   end
 
   def add_a_book
-    puts 'add_a_book'
+    add_books
   end
 
   def add_a_music_album

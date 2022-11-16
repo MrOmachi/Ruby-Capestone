@@ -156,5 +156,17 @@
         "name": "Reguetton"
       }
     ]
+  },
+  {
+    "id": 859,
+    "archived": true,
+    "publish_date": "1111-12-12",
+    "on_spotify": "Y",
+    "genre": [
+      {
+        "id": 32,
+        "name": "Reguetton"
+      }
+    ]
   }
 ]
