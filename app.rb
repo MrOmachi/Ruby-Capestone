@@ -6,7 +6,7 @@ require_relative './module/author_module'
 class App
   include GameModule
   include DataStorage
-include BookModule
+  include BookModule
 
   def initialize
     @books = []
